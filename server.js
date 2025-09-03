@@ -7,10 +7,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://2312017:<Gok@1234>@cluster0.gbbebul.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect('mongodb+srv://2312017:Gok%401234@cluster0.gbbebul.mongodb.net/labdb?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log("MongoDB Atlas Connected"))
 .catch(err => console.log(err));
 
